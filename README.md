@@ -3,7 +3,7 @@
 1. Feature selection
 
 After training the model a few times, I noticed that certain features have a very small contribution, so they were eliminated.
-I trained 2 different models Random Forest and XGBoost and I noticed that each has different features to predict the values, so I decided to combine them in a larger model to compensate for the weaknesses of the other.
+I trained 2 different models <mark>Random Forest</mark> and <mark>XGBoost</mark> and I noticed that each has different features to predict the values, so I decided to combine them in a larger model to compensate for the weaknesses of the other.
 
  
 
@@ -31,9 +31,9 @@ Data augmentation for size>10000
 For the model I initially chose Random Forest and xgboost because it combines the predictions of multiple individual models (decision trees) to produce a more robust and accurate prediction. Later I used it in combination with Adaboost because It focuses on correcting the mistakes made by previous models in the ensemble and is less prone to overfitting compared to some other complex models. For the model I initially chose Random Forest and xgboost because it combines the predictions of multiple individual models (decision trees) to produce a more robust and accurate prediction. Then, I considered using another very useful model such as xgboost because it includes L1 (Lasso) and L2 (Ridge) regularization and can be used in various datasets. Later, observing the important features of each model, I had to combine them using a voting classifier thus targeting the weak points of each algorithm.
 
 <div style="text-align: center;">
-  <img src="Picture 5.png"  />
+<img src="Picture 5.png"  />
+<p style="font-style: italic; font-size: 14px; color: #555;">To adjust the parameters of the models, I used Grid Search, thus obtaining the best combination of parameters. </p>
 </div>
-* To adjust the parameters of the models, I used Grid Search, thus obtaining the best combination of parameters. *
 
 3. Conclusion
 
