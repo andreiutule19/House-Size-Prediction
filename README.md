@@ -30,7 +30,10 @@ Data augmentation for size>10000
 
 For the model I initially chose Random Forest and xgboost because it combines the predictions of multiple individual models (decision trees) to produce a more robust and accurate prediction. Later I used it in combination with Adaboost because It focuses on correcting the mistakes made by previous models in the ensemble and is less prone to overfitting compared to some other complex models. For the model I initially chose Random Forest and xgboost because it combines the predictions of multiple individual models (decision trees) to produce a more robust and accurate prediction. Then, I considered using another very useful model such as xgboost because it includes L1 (Lasso) and L2 (Ridge) regularization and can be used in various datasets. Later, observing the important features of each model, I had to combine them using a voting classifier thus targeting the weak points of each algorithm.
 
-<img src="Picture 5.png" alt="To adjust the parameters of the models, I used Grid Search, thus obtaining the best combination of parameters." width="300" />
+<div style="text-align: center;">
+  <img src="Picture 5.png"  />
+</div>
+* To adjust the parameters of the models, I used Grid Search, thus obtaining the best combination of parameters. *
 
 3. Conclusion
 
