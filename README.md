@@ -1,5 +1,3 @@
-### Explanations
-
 1. Feature selection
 
 After training the model a few times, I noticed that certain features have a very small contribution, so they were eliminated.
@@ -31,13 +29,13 @@ Data augmentation for size>10000
 For the model I initially chose Random Forest and xgboost because it combines the predictions of multiple individual models (decision trees) to produce a more robust and accurate prediction. Later I used it in combination with Adaboost because It focuses on correcting the mistakes made by previous models in the ensemble and is less prone to overfitting compared to some other complex models. For the model I initially chose Random Forest and xgboost because it combines the predictions of multiple individual models (decision trees) to produce a more robust and accurate prediction. Then, I considered using another very useful model such as xgboost because it includes L1 (Lasso) and L2 (Ridge) regularization and can be used in various datasets. Later, observing the important features of each model, I had to combine them using a voting classifier thus targeting the weak points of each algorithm.
 
 <div style="text-align: center;">
-<img src="Picture 5.png"  />
-<p style="font-style: italic; font-size: 14px; color: #555;">To adjust the parameters of the models, I used Grid Search, thus obtaining the best combination of parameters. </p>
+    <img src="images/Picture 5.png"  />
+    <p style="font-style: italic; font-size: 14px; color: #555;">To adjust the parameters of the models, I used Grid Search, thus obtaining the best combination of parameters. </p>
 </div>
 
 3. Conclusion
 
 In the end, even if the MSE is quite high, I tend to think that the model can predict the "size" value quite well. I added a series of predictions for the values that contained Nan in the "size" column (predicted_size.csv) .
 
-![](<Picture 6.png>)
+![](<images/Picture 6.png>)
  
